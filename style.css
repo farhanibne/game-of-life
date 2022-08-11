@@ -1,0 +1,84 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #505050;
+  background: #F8F8F8;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+td {
+  border: 1px solid #DDD;
+  height: 1em;
+  width: 1em;
+}
+td:hover:not(.alive):not(.new-born) {
+  background: #DDD;
+}
+
+/* Width to match app grid size */
+.container {
+  margin: 1.5em auto;
+  max-width: 40em;
+}
+
+/* Grid styles */
+table {
+  margin: 1em 0;
+}
+
+.alive {
+  background: #FF5400;
+}
+
+.new-born {
+  background: #FFBF00;
+}
+
+/* Controls and button styles */
+.controls {
+  float: left;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button {
+  display: inline-block;
+  margin-right: 0.4em;
+  padding: 0.3em 0.7em;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.5em;
+  background: #DB4500;
+  color: #fff;
+  cursor: pointer;
+}
+.button:hover {
+  background: #ff5b0f;
+}
+
+.button-group {
+  display: inline-block;
+}
+.button-group .button {
+  border-right: 1px solid #c23d00;
+  margin-right: 0px;
+}
+.button-group .button:last-child {
+  border-right: 0;
+}
+
+.fa-pause, .fa-play, .fa-step-forward {
+  width: 1em;
+  text-align: center;
+}
+
+.counter {
+  float: right;
+}
